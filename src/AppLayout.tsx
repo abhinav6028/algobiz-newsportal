@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Footer from "./components/footer/Footer";
 import MainContainer from "./pages/MainContainer";
 import NewsDetailPage from "./components/entertainment/Entertainment";
+import BusinessDetails from "./components/details/BusinessDetails";
 // import Entertainment from "./components/entertainment/Entertainment";
 
 function AppLayout() {
@@ -14,7 +15,7 @@ function AppLayout() {
       <Routes>
         <Route path="/" element={<MainContainer />} />
         <Route path="/:id" element={<NewsDetailPage />} />
-        <Route path="/detailpage/:id" element={<MainContainer />} />
+        <Route path="/detailpage/:id" element={<BusinessDetails />} />
       </Routes>
       {location.pathname !== "/business" && <Footer />}
     </>
