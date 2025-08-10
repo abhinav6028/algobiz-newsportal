@@ -1,0 +1,1 @@
+export type MenuType = "home" | "entertainment" | "sports" | "health" | "technology" | "environment";
